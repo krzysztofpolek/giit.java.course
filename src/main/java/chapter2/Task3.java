@@ -24,10 +24,7 @@ public class Task3 {
 
         System.out.println("Wartość zmiennej parameter2 po wywołanie metody accessParameter: " + parameter2);
 
-
         System.out.println("Podsumowanie: \n1 - TAK\n2 - TAK");
-
-
 
     }
 
