@@ -1,5 +1,11 @@
 package chapter2;
 
+/**
+ * Obiekt <code>Point</code> opisuje punkt na płaszczyźnie.
+ * @author Krzysztof Polek
+ * @version 1.0
+ */
+
 public class Task5 {
 
     public static void main(String[] args) {
@@ -18,7 +24,7 @@ public class Task5 {
         System.out.println("Punkt (" + p.getX() + ", " + p.getY() + ")");
     }
 
-    static class Point {
+    public static class Point {
 
         double x;
         double y;
@@ -49,6 +55,12 @@ public class Task5 {
 
         }
 
+        /**
+         * Przesuwa punkt o podaną w zmiennych odległość w kierunku x i y
+         * @param x o ile przesunąć punkt względem osi x
+         * @param y o ile przesunąć punkt względem osi y
+         * @return Nowy punkt
+         */
         public Point translate(double x, double y) {
 
             double a = this.x + x;
@@ -57,6 +69,11 @@ public class Task5 {
             return new Point(a, b);
         }
 
+        /**
+         * Skaluje obie współrzędne o wskazany współczynnik.
+         * @param number o ile skalować współrzędne
+         * @return Nowy punkt
+         */
         public Point scale(double number) {
 
             double a = this.x * number;
